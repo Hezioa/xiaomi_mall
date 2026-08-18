@@ -1,0 +1,1031 @@
+/* 顶部广告 */
+header {
+    height: 120px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 黑色导航栏部分 */
+
+nav {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    background-color: #333;
+    font-size: 12px;
+}
+
+.fenge {
+    color: #424242;
+    font-weight: bold;
+    margin: auto 4px;
+}
+
+nav .container {
+    height: 100%;
+    max-width: 1226px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    position: relative;
+}
+
+.right-nav {
+    position: relative;
+}
+
+.left-nav a,
+.right-nav a {
+    color: #b0b0b0;
+}
+
+.left-nav a:hover,
+.right-nav a:hover {
+    color: #fff;
+}
+
+.QR {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 5px #000;
+    z-index: 30;
+}
+
+.downloadapp {
+    position: relative;
+}
+
+.downloadapp:hover .QR {
+    display: block;
+}
+
+.buycar-block {
+    position: relative;
+    height: 40px;
+    padding: 12px 22px;
+    z-index: 30;
+}
+
+.buycar-block .buycar {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    color: #333;
+    height: 140px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 140px;
+    box-shadow: 2px 2px 5px #b0b0b0;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100%;
+    border: 1px solid #333;
+    white-space: nowrap;
+}
+
+.buycar-block:hover {
+    background-color: #fff;
+    color: coral;
+}
+
+.buycar-block:hover .buycar {
+    display: block;
+}
+
+/* 白色导航栏部分 */
+
+.white-nav-background {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.white-container {
+    height: 100%;
+    max-width: 1226px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 0px;
+    background-color: #fe6900;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    margin: auto 0;
+    transition: all 0.2s;
+}
+
+.logo .mi-logo {
+    left: 10px;
+}
+
+.logo .mi-home {
+    right: 100%;
+}
+
+.logo:hover .mi-logo {
+    left: 100%;
+}
+
+.logo:hover .mi-home {
+    right: 10px;
+}
+
+.white-nav-left {
+    display: flex;
+    margin-left: 160px;
+    height: 100%;
+}
+
+.white-nav-left li {
+    height: 100%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.white-nav-left li a {
+    color: #424242;
+    font-size: 16px;
+}
+
+.phone-block {
+    position: absolute;
+    height: 197px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #d0d0d0;
+    box-shadow: 0 1px 2px #d0d0d0;
+    display: none;
+    z-index: 25;
+}
+
+.phone:hover .phone-block {
+    display: block;
+}
+
+.phone-details {
+    height: 100%;
+    width: 100%;
+    max-width: 1226px;
+}
+
+.phone-details ul {
+    display: flex;
+    align-items: stretch;
+    margin-left: 200px;
+}
+
+.phone-details ul li {
+    margin: 0;
+}
+
+.phone-items {
+    height: 100%;
+    width: 200px;
+    border: 1px solid #d0d0d0;
+}
+
+.phone-items img {
+    height: 150px;
+    width: auto;
+}
+
+.white-nav-search {
+    margin-left: auto;
+    margin-right: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.white-nav-search input,
+.white-nav-search button {
+    border: 1px solid #b0b0b0;
+    background-color: #fff;
+}
+
+.white-nav-search input {
+    padding: 0 10px;
+    height: 50px;
+    width: 250px;
+    border-right: none;
+    outline: none;
+}
+
+.white-nav-search button {
+    height: 51px;
+    width: 50px;
+    color: #424242;
+    font-weight: 700;
+}
+
+.white-nav-search button:hover {
+    background-color: #fe6900;
+    color: #fff;
+}
+
+.white-nav-search:hover input,
+.white-nav-search:hover button {
+    border-color: #424242;
+}
+
+.white-nav-search:focus-within input,
+.white-nav-search:focus-within button {
+    border-color: #fe6900;
+}
+
+/* 轮播图部分 */
+
+.carousel-background {
+    height: 460px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+.carousel-container {
+    background: url("./images/banner.jpg") no-repeat center / cover;
+    height: 100%;
+    width: 100%;
+    max-width: 1226px;
+    display: flex;
+    position: relative;
+}
+
+.carousel-list {
+    height: 100%;
+    width: 235px;
+    background-color: #535b62;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-list ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.carousel-list ul li {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 0 25px;
+    flex: 1;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-list ul li .arrow {
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.carousel-list ul li:hover {
+    background-color: #fe6900;
+}
+
+.product-detail {
+    background-color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 991px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    top: 0;
+    border-top: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+}
+
+.product-phone:hover .product-detail {
+    display: flex;
+}
+
+.product-row {
+    display: flex;
+    min-height: 0;
+    flex: 1;
+}
+
+.product-data {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    border-bottom: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+}
+
+.product-data img {
+    height: 60%;
+    width: auto;
+}
+
+.product-data a {
+    color: #000;
+}
+
+.product-data a:hover {
+    color: #fe6900;
+}
+
+/* 广告栏 */
+
+.ad-background {
+    height: 170px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.ad-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ad-block {
+    height: 100%;
+    width: 315px;
+}
+
+.ad-block img {
+    height: 100%;
+    width: 100%;
+}
+
+.ad-mifen {
+    height: 100%;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5f5750;
+}
+
+.mifen-row {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.mifen-data {
+    flex: 1;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.mifen-data i {
+    margin-top: 20px;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+}
+
+.mifen-data p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.mifen-data:hover {
+    opacity: 1;
+}
+
+/* 用于分割的广告栏 */
+
+.ad-separation1 {
+    height: 180px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.ad-separation1 img {
+    height: 120px;
+    width: 100%;
+    margin: 25px 0 35px 0;
+}
+
+.main-body-background {
+    height: auto;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 手机部分 */
+
+.phone-part-background {
+    height: 750px;
+    width: 100%;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-title-container {
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-title-container h2 {
+    color: #333;
+    font-weight: 400;
+}
+
+.phone-title-container a {
+    margin-left: auto;
+    font-size: 20px;
+    color: #333;
+}
+
+.phone-title-container a:hover {
+    color: #fe6900;
+}
+
+.phone-content-container {
+    height: 615px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-ad {
+    height: 100%;
+    width: 230px;
+    transition: all 0.2s;
+}
+
+.phone-ad img {
+    height: 100%;
+    width: 100%;
+}
+
+.phone-ad:hover {
+    box-shadow: 4px 4px 10px #808080;
+    transform: scale(1.03);
+}
+
+.phone-body {
+    height: 615px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone-body-row {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-body-data {
+    height: 300px;
+    width: 238px;
+    min-width: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.phone-body-data:hover {
+    box-shadow: 4px 4px 10px #808080;
+    transform: scale(1.03);
+}
+
+.phone-body-data img {
+    margin-top: 20px;
+    height: 55%;
+    object-fit: contain;
+}
+
+.phone-type,
+.phone-feature,
+.current-price,
+.original-price {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.phone-type {
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.phone-feature {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+.phone-price {
+    margin-top: 15px;
+}
+
+.current-price {
+    font-size: 14px;
+    color: #fe6900;
+}
+
+.original-price {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+/* 用于分割的广告栏 */
+
+.ad-separation2 {
+    height: 120px;
+    width: 100%;
+}
+
+.ad-separation2 img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 家电部分 */
+
+.tv-part-background {
+    height: 750px;
+    width: 100%;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-title-container {
+    height: 80px;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tv-title-container h2 {
+    color: #333;
+    font-weight: 400;
+}
+
+.tv-title-box {
+    margin-left: auto;
+    color: #333;
+}
+
+.tv-title-tag {
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.tv-title-tag:hover {
+    color: #fe6900;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+.tv-content-container {
+    height: 615px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tv-ad {
+    height: 300px;
+    width: 230px;
+    margin-top: 150px;
+    transition: all 0.2s;
+}
+
+.tv-ad img {
+    height: 100%;
+    width: 100%;
+}
+
+.tv-ad:hover {
+    box-shadow: 4px 4px 10px #808080;
+    transform: scale(1.03);
+}
+
+.tv-body {
+    height: 615px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tv-body-row {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tv-body-data {
+    height: 300px;
+    width: 238px;
+    min-width: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.tv-body-comment {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #fe6900;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tv-comment-content {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.tv-comment-from {
+    margin-top: 10px;
+    color: #d0d0d0;
+    font-size: 12px;
+}
+
+.tv-body-data:hover {
+    box-shadow: 4px 4px 10px #808080;
+    transform: scale(1.03);
+}
+
+.tv-body-data:hover .tv-body-comment {
+    display: block;
+    height: 75px;
+}
+
+.tv-body-data img {
+    margin-top: 20px;
+    height: 55%;
+    object-fit: contain;
+}
+
+.tv-type,
+.tv-feature,
+.tv-current-price,
+.tv-original-price {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tv-type {
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.tv-feature {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+.tv-price {
+    margin-top: 15px;
+}
+
+.tv-current-price {
+    font-size: 14px;
+    color: #fe6900;
+}
+
+.tv-original-price {
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+/* 用于分割的广告栏 */
+
+.ad-separation3 {
+    height: 120px;
+    width: 100%;
+}
+
+.ad-separation3 img {
+    height: 100%;
+    width: 100%;
+}
+
+.ad-separation3 {
+    height: 120px;
+    width: 100%;
+}
+
+.ad-separation3 img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 视频部分 */
+
+.video-background {
+    height: 400px;
+    width: 100%;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-title-container {
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-title-container h2 {
+    color: #333;
+    font-weight: 400;
+}
+
+.video-title-container a {
+    color: #000;
+    font-size: 18px;
+}
+
+.video-title-container a:hover {
+    color: #fe6900;
+}
+
+.video-body-container {
+    height: 285px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-content-box {
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.play-video-button {
+    position: absolute;
+    bottom: 40%;
+    left: 8%;
+    padding: 3px 5px 1px 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+
+.play-video-button i {
+    font-size: 20px;
+    transition: all 0.2s;
+}
+
+.video-content-box:hover {
+    box-shadow: 4px 4px 10px #808080;
+    transform: scale(1.03);
+}
+
+.video-content-box:hover .play-video-button {
+    border: 2px solid #fe6900;
+}
+
+.video-content-box:hover .play-video-button i {
+    color: #fe6900;
+}
+
+.video-content-box img {
+    height: 180px;
+    width: 100%;
+}
+
+.video-tag1 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.video-tag2 {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/* 页脚部分 */
+.footer-background {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-container li {
+    padding: 0 5%;
+    border-left: 1px solid #b0b0b0;
+}
+
+.service-container li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.service-container li a:hover {
+    color: #fe6900;
+}
+
+.footer-links {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-block-container {
+    height: 150px;
+    width: 1350px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-block {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-block p {
+    font-size: 16px;
+    color: #424242;
+}
+
+.link-block ul li {
+    margin-top: 10px;
+}
+
+.link-block ul li a {
+    font-size: 12px;
+    color: #757575;
+}
+
+.link-block ul li:hover a {
+    color: #fe6900;
+}
+
+.contact-block {
+    height: 80%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #b0b0b0;
+}
+
+.phone-number {
+    color: #fe6900;
+    font-size: 24px;
+}
+
+.available-time {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #616161;
+}
+
+.contact-button {
+    height: 30px;
+    width: 125px;
+    margin-top: 18px;
+    border: 1px solid #fe6900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button p {
+    color: #fe6900;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #fe6900;
+}
+
+.contact-button:hover p {
+    color: #fff;
+}
+
+.subscribe-block {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-title {
+    font-size: 12px;
+    color: #616161;
+}
+
+.subscribe-block a {
+    color: #808080;
+}
+
+.subscribe-block a:hover {
+    color: #fe6900;
+}
