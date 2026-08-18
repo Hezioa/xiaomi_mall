@@ -11,11 +11,11 @@
 - **设计规范**：1226px 固定内容宽度，贴合小米官网原版布局
 
 ## 项目结构
-xiaomi-mall/
-├── index.html # 首页主文件
-├── css/
-│ ├── reset.css # 浏览器样式重置
-│ └── xiaomi.css # 页面主样式
+xiaomi-mall/<br>
+├── index.html # 首页主文件<br>
+├── css/<br>
+│ ├── reset.css # 浏览器样式重置<br>
+│ └── xiaomi.css # 页面主样式<br>
 └── images/ # 页面图片资源（banner、商品图、图标等）
 
 ## 已实现功能
